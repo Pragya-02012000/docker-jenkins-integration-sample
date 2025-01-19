@@ -19,6 +19,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     public String save(List<Employee> emp){
         employeeRepository.saveAll(emp);
+        System.out.println("hello");
         return "Saved";
     }
 
